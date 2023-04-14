@@ -6,3 +6,4 @@ urlpatterns = [
     path('items/', ItemListCreateView.as_view()),
     path('items/<int:pk>/', ItemRetrieveDeleteView.as_view()),
 ]
+
