@@ -1,0 +1,7 @@
+Pillow
+python-dotenv
+Django
+django-redis
+requests
+django-simpleui
+uwsgi
