@@ -26,7 +26,6 @@
 - 將Django中的settings.py配置檔案中設定SESSION_COOKIE_HTTPONLY設為True來防止前端出現錯誤訊息，減少XSS攻擊風險
 - 在settings.py配置檔案中設定CORS_ORIGIN_WHITELIST，讓前端vue可以呼叫到django的api，同時又可防止跨站攻擊(CSRF)及跨網站腳本攻擊(XSS)
 - 使用 django套件 transaction.atomic() ,使關連式資料庫遵守ACID原則
-- 並將架構分為展示層、業務層、資料層、共用層
 
 
 ## 快速測試
