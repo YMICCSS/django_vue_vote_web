@@ -4,6 +4,10 @@
 採用前後端分離開發一個簡單的投票網頁，
 前端使用vue3，後端使用django
 
+## Demo
+https://user-images.githubusercontent.com/62460653/232187199-a2ec1568-e8fe-45f7-a3f6-dd08ba51ee1c.mp4
+
+
 ## 架構、安全性配置說明
 
 **架構**
