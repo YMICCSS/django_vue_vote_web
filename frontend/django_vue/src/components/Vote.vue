@@ -1,33 +1,40 @@
 <template>
-    <div>
-      <h1>投票項目列表</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>投票項目</th>
-            <th>得票數</th>
-            <th>操作</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(item, index) in items" :key="item.id">
-            <td>{{ item.name }}</td>
-            <td>{{ item.votes }}</td>
-            <td>
-              <input type="checkbox" :value="item.id" v-model="selectedItems" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <form @submit.prevent="voteItem">
-        <label for="voter-name">投票人名字:</label>
-        <input type="text" id="voter-name" v-model="voterName" required />
-        <br />
-        <button type="submit">投票</button>
-      </form>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="container">
+        <h1 class="mt-4">投票項目列表</h1>
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">投票項目</th>
+              <th scope="col">得票數</th>
+              <th scope="col">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, index) in items" :key="item.id">
+              <td>{{ item.name }}</td>
+              <td>{{ item.votes }}</td>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" :value="item.id" v-model="selectedItems" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <form @submit.prevent="voteItem">
+          <div class="form-group mt-4">
+            <label for="voter-name">投票人名字 : </label>
+            <input type="text" class="form-control" id="voter-name" v-model="voterName" required />
+          </div>
+          <br>
+          <div class="d-flex justify-content-center">
+           <button type="submit" class="btn btn-primary ">投票</button>
+          </div>
+        </form>
+      </div>
     </div>
   </template>
-  
   <script>
   export default {
     data() {
@@ -82,4 +89,3 @@
     }
   };
   </script>
-  

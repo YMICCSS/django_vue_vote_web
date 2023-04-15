@@ -79,7 +79,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'vote_web.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 

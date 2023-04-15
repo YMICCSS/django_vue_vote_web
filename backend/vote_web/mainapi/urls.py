@@ -1,10 +1,9 @@
 from django.urls import path
-from . import views
-from .views import ItemListCreateView, ItemRetrieveDeleteView
-from .views import vote
+from .views import ItemListCreateView, ItemRetrieveDeleteView,VoteAPIView
+
 urlpatterns = [
     path('items/', ItemListCreateView.as_view()),
     path('items/<int:pk>/', ItemRetrieveDeleteView.as_view()),
-    path('votes/', vote),
+    path('votes/', VoteAPIView.as_view()),
 ]
 
