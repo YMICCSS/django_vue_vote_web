@@ -6,8 +6,8 @@
           <thead>
             <tr>
               <th scope="col">投票項目</th>
-              <th scope="col">得票數</th>
-              <th scope="col">操作</th>
+              <th scope="col">目前得票數</th>
+              <th scope="col">選擇</th>
             </tr>
           </thead>
           <tbody>
@@ -24,7 +24,7 @@
         </table>
         <form @submit.prevent="voteItem">
           <div class="form-group mt-4">
-            <label for="voter-name">投票人名字 : </label>
+            <label for="voter-name">投票人暱稱 : </label>
             <input type="text" class="form-control" id="voter-name" v-model="voterName" required />
           </div>
           <br>

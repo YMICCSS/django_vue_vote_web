@@ -58,9 +58,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# 為方便測試式開發所有跨域請求，實際生產環境請使用下方CORS_ORIGIN_WHITELIST設定前端請求來源port
 CORS_ORIGIN_ALLOW_ALL = True
-ROOT_URLCONF = 'vote_web.urls'
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:5173',
+# )
 
+SESSION_COOKIE_HTTPONLY = True
+ROOT_URLCONF = 'vote_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -82,6 +87,7 @@ WSGI_APPLICATION = 'vote_web.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# 為方便快速測試，所以直接在此打上帳密，但實際生產環境中請將機密資料寫進.env環境配置檔案中
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
