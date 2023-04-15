@@ -99,4 +99,14 @@ $ npm run dev
 
 訪問 http://localhost:5173/vote 就可以進行投票
 
+## 查看投票細節
+
+如要查看投票細節，可創建Django超級使用者登入後，即可在管理頁面看到細節，創建方式如下。在backend/vote_web路徑下，cmd命令列輸入以下指令
+
+```bash
+$ python3 manage.py createsuperuser
+```
+
+輸入帳號密碼email後即可在 http://localhost:8000/admin 進行登入
+
 
