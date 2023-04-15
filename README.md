@@ -78,6 +78,7 @@ $ python manage.py runserver
 
 步驟一 :
 先到官網下載node.js
+
 [下載連結](https://nodejs.org/zh-tw/download)
 
 
