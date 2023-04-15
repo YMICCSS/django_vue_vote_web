@@ -2,7 +2,11 @@
 
 ## django_vue_vote_web
 採用前後端分離開發一個簡單的投票網頁，
-前端使用vue3，後端使用django
+前端使用Vue3，後端使用Django
+
+## Demo
+https://user-images.githubusercontent.com/62460653/232187199-a2ec1568-e8fe-45f7-a3f6-dd08ba51ee1c.mp4
+
 
 ## 架構、安全性配置說明
 
@@ -15,7 +19,7 @@
 
 **技術**
 - 前端開發使用Vue3
-- 後端開發使用python3.7 ,框架為Django
+- 後端開發使用Python3.7 ,框架為Django
 - 使用Restful風格建立後端服務
 - 資料庫配置放在backend/vote_web/mainapi/models.py中
 - 並將架構分為展示層、業務層、資料層、共用層
@@ -26,7 +30,6 @@
 - 將Django中的settings.py配置檔案中設定SESSION_COOKIE_HTTPONLY設為True來防止前端出現錯誤訊息，減少XSS攻擊風險
 - 在settings.py配置檔案中設定CORS_ORIGIN_WHITELIST，讓前端vue可以呼叫到django的api，同時又可防止跨站攻擊(CSRF)及跨網站腳本攻擊(XSS)
 - 使用 django套件 transaction.atomic() ,使關連式資料庫遵守ACID原則
-- 並將架構分為展示層、業務層、資料層、共用層
 
 
 ## 快速測試
@@ -75,21 +78,17 @@ $ python manage.py runserver
 
 步驟一 :
 先到官網下載node.js
+
 [下載連結](https://nodejs.org/zh-tw/download)
 
-步驟二 :
-安裝vite
-```bash
-$ npm install vite -g
-```
 
-步驟三 :
+步驟二 :
 開啟CMD命令提式字元，將CMD命令提式字元切換到本專案frontend\django_vue路徑下， 輸入以下指令安裝npm及相關套件
 ```bash
 $ npm install
 ```
 
-步驟四 : 
+步驟三 : 
 運行前端vue服務
 ```bash
 $ npm run dev
@@ -99,5 +98,15 @@ $ npm run dev
 訪問 http://localhost:5173/ 就可管理投票項目
 
 訪問 http://localhost:5173/vote 就可以進行投票
+
+## 查看投票細節
+
+如要查看投票細節，可創建Django超級使用者登入後，即可在管理頁面看到細節，創建方式如下。在backend/vote_web路徑下，cmd命令列輸入以下指令
+
+```bash
+$ python manage.py createsuperuser
+```
+
+輸入帳號密碼email後即可在 http://localhost:8000/admin 進行登入
 
 
