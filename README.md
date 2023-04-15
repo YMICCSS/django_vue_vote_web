@@ -80,19 +80,14 @@ $ python manage.py runserver
 先到官網下載node.js
 [下載連結](https://nodejs.org/zh-tw/download)
 
-步驟二 :
-安裝vite
-```bash
-$ npm install vite -g
-```
 
-步驟三 :
+步驟二 :
 開啟CMD命令提式字元，將CMD命令提式字元切換到本專案frontend\django_vue路徑下， 輸入以下指令安裝npm及相關套件
 ```bash
 $ npm install
 ```
 
-步驟四 : 
+步驟三 : 
 運行前端vue服務
 ```bash
 $ npm run dev
