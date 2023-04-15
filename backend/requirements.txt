@@ -1,7 +1,5 @@
-Pillow
-python-dotenv
 Django
-django-redis
+djangorestframework
+django-cors-headers
 requests
-django-simpleui
-uwsgi
+pymysql

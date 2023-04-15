@@ -12,6 +12,9 @@ class Item(models.Model):
         return self.name
 
 class Vote(models.Model):
-    voter_name = models.CharField(max_length=255)
+    voter_name = models.CharField(max_length=50, verbose_name="投票人暱稱")
     item = models.ForeignKey(Item, on_delete=models.CASCADE,null=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.voter_name

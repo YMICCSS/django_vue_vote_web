@@ -11,15 +11,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import load_dotenv
 import os
 import pymysql
 pymysql.install_as_MySQLdb()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# 載入環境設定檔
-load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -91,9 +88,9 @@ WSGI_APPLICATION = 'vote_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_vue_db',
-        'USER': 'root',
-        'PASSWORD': 'aw123456',
+        'NAME': 'XXXX',
+        'USER': 'XXXX',
+        'PASSWORD': 'XXXX',
         'HOST': '',
         'PORT': '3306',
     }
