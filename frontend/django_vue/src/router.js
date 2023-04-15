@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Admin from '@/components/Admin.vue'
-import Vote from '@/components/Vote.vue'
+import Admin from './components/Admin.vue'
+import Vote from './components/Vote.vue'
 
 const routes = [
     {

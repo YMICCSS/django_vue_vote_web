@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# 生產環境請保護好SECRET_KEY，並配置在.env檔案中才安全，此專案為方便快速測試固直接寫在程式碼中
 SECRET_KEY = 'django-insecure-dv&j4r-ezr7#9xn=t3$=%3c0uygtj0aq=nbj^rp37ru9q+7&5x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -88,9 +89,9 @@ WSGI_APPLICATION = 'vote_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'XXXX',
-        'USER': 'XXXX',
-        'PASSWORD': 'XXXX',
+        'NAME': 'django_vue_db',
+        'USER': 'root',
+        'PASSWORD': 'aw123456',
         'HOST': '',
         'PORT': '3306',
     }
