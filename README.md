@@ -61,7 +61,7 @@ https://user-images.githubusercontent.com/62460653/232187199-a2ec1568-e8fe-45f7-
 $ pip install -r requirements.txt
 ```
 
-步驟五 : 依序輸入以下兩行命令進行資料庫的更新
+步驟五 : 切換到本專案backend/vote_web/路徑,依序輸入以下兩行命令進行資料庫的更新
 ```bash
 $ python manage.py makemigrations
 $ python manage.py migrate       
