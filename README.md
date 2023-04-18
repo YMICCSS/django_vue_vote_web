@@ -56,7 +56,7 @@ https://user-images.githubusercontent.com/62460653/232187199-a2ec1568-e8fe-45f7-
 }
 ```
 步驟四 : 
-開啟CMD命令提式字元，將CMD命令提式字元切換到本專案backend/vote_web路徑， 輸入以下指令安裝Django及相關套件
+開啟CMD命令提式字元，將CMD命令提式字元切換到本專案backend/路徑， 輸入以下指令安裝Django及相關套件
 ```bash
 $ pip install -r requirements.txt
 ```
